@@ -2,14 +2,10 @@ import React from "react";
 
 function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
       <header className="header">
-        <a href="#">
-          <img
-            className="logo"
-            alt="Omnifood logo"
-            src="img/omnifood-logo.png"
-          />
+        <a href="/#">
+          <img className="logo" alt="Omnifood" src="img/omnifood-logo.png" />
         </a>
 
         <nav className="main-nav">
@@ -68,30 +64,12 @@ function App() {
               </a>
               <div className="delivered-meals">
                 <div className="delivered-imgs">
-                  <img
-                    src="img/customers/customer-1.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-2.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-3.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-4.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-5.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-6.jpg"
-                    alt="Customer photo"
-                  />
+                  <img src="img/customers/customer-1.jpg" alt="Customer" />
+                  <img src="img/customers/customer-2.jpg" alt="Customer" />
+                  <img src="img/customers/customer-3.jpg" alt="Customer" />
+                  <img src="img/customers/customer-4.jpg" alt="Customer" />
+                  <img src="img/customers/customer-5.jpg" alt="Customer" />
+                  <img src="img/customers/customer-6.jpg" alt="Customer" />
                 </div>
                 <p className="delivered-text">
                   <span>250,000+</span> meals delivered last year!
@@ -100,8 +78,8 @@ function App() {
             </div>
             <div className="hero-img-box">
               <picture>
-                <source srcset="img/hero.webp" type="image/webp" />
-                <source srcset="img/hero-min.png" type="image/png" />
+                <source srcSet="img/hero.webp" type="image/webp" />
+                <source srcSet="img/hero-min.png" type="image/png" />
               </picture>
               <img
                 src="img/hero-min.png"
@@ -119,14 +97,14 @@ function App() {
               <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
               <img
                 src="img/logos/business-insider.png"
-                alt="Business Insider logo"
+                alt="Business Insider"
               />
               <img
                 src="img/logos/the-new-york-times.png"
-                alt="The New York Times logo"
+                alt="The New York Times"
               />
-              <img src="img/logos/forbes.png" alt="Forbes logo" />
-              <img src="img/logos/usa-today.png" alt="USA Today logo" />
+              <img src="img/logos/forbes.png" alt="Forbes" />
+              <img src="img/logos/usa-today.png" alt="USA Today" />
             </div>
           </div>
         </section>
@@ -374,7 +352,7 @@ function App() {
           </div>
 
           <div className="container all-recipes">
-            <a href="#" className="link">
+            <a href="/#" className="link">
               See all recipes &rarr;
             </a>
           </div>
@@ -391,7 +369,7 @@ function App() {
               <figure className="testimonial">
                 <img
                   className="testimonial-img"
-                  alt="Photo of customer Dave Bryson"
+                  alt="Customer Dave Bryson"
                   src="img/customers/dave.jpg"
                 />
                 <blockquote className="testimonial-text">
@@ -404,7 +382,7 @@ function App() {
               <figure className="testimonial">
                 <img
                   className="testimonial-img"
-                  alt="Photo of customer Ben Hadley"
+                  alt="Customer Ben Hadley"
                   src="img/customers/ben.jpg"
                 />
                 <blockquote className="testimonial-text">
@@ -417,7 +395,7 @@ function App() {
               <figure className="testimonial">
                 <img
                   className="testimonial-img"
-                  alt="Photo of customer Steve Miller"
+                  alt="Customer Steve Miller"
                   src="img/customers/steve.jpg"
                 />
                 <blockquote className="testimonial-text">
@@ -431,7 +409,7 @@ function App() {
               <figure className="testimonial">
                 <img
                   className="testimonial-img"
-                  alt="Photo of customer Hannah Smith"
+                  alt="Customer Hannah Smith"
                   src="img/customers/hannah.jpg"
                 />
                 <blockquote className="testimonial-text">
@@ -448,84 +426,84 @@ function App() {
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-1.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-2.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-3.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-4.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-5.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-6.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-7.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-8.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-9.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-10.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-11.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
             <figure className="gallery-item">
               <img
                 src="img/gallery/gallery-12.jpg"
-                alt="Photo of beautifully
+                alt="Beautifully
             arranged food"
               />
             </figure>
@@ -581,7 +559,7 @@ function App() {
                 </li>
               </ul>
               <div className="plan-sign-up">
-                <a href="#" className="btn btn--full">
+                <a href="/#" className="btn btn--full">
                   Start eating well
                 </a>
               </div>
@@ -632,7 +610,7 @@ function App() {
                 </li>
               </ul>
               <div className="plan-sign-up">
-                <a href="#" className="btn btn--full">
+                <a href="/#" className="btn btn--full">
                   Start eating well
                 </a>
               </div>
@@ -704,9 +682,9 @@ function App() {
                   the first meal is on us!
                 </p>
 
-                <form className="cta-form" action="sign-up" netlify>
+                <form className="cta-form" action="sign-up" netlify="true">
                   <div>
-                    <label for="full-name">Full Name</label>
+                    <label htmlFor="full-name">Full Name</label>
                     <input
                       id="full-name"
                       type="text"
@@ -717,7 +695,7 @@ function App() {
                   </div>
 
                   <div>
-                    <label for="email">Email address</label>
+                    <label htmlFor="email">Email address</label>
                     <input
                       id="email"
                       type="email"
@@ -728,7 +706,7 @@ function App() {
                   </div>
 
                   <div>
-                    <label for="select-where">
+                    <label htmlFor="select-where">
                       Where did you hear from us?
                     </label>
                     <select id="select-where" name="select-where" required>
@@ -757,17 +735,17 @@ function App() {
       <footer className="footer">
         <div className="container grid grid--footer">
           <div className="logo-col">
-            <a href="#" className="footer-logo">
+            <a href="/#" className="footer-logo">
               <img
                 className="logo"
-                alt="Omnifood logo"
+                alt="Omnifood"
                 src="img/omnifood-logo.png"
               />
             </a>
 
             <ul className="social-links">
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   <ion-icon
                     className="social-icon"
                     name="logo-instagram"
@@ -775,7 +753,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   <ion-icon
                     className="social-icon"
                     name="logo-facebook"
@@ -783,7 +761,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   <ion-icon
                     className="social-icon"
                     name="logo-twitter"
@@ -820,22 +798,22 @@ function App() {
             <p className="footer-heading">Account</p>
             <ul className="footer-nav">
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Create account
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Sign in
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   iOS app
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Android app
                 </a>
               </li>
@@ -846,22 +824,22 @@ function App() {
             <p className="footer-heading">Company</p>
             <ul className="footer-nav">
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   About Omnifood
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   For Business
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Cooking partners
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Careers
                 </a>
               </li>
@@ -872,17 +850,17 @@ function App() {
             <p className="footer-heading">Resources</p>
             <ul className="footer-nav">
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Recipe directory{" "}
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Help center
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="/#">
                   Privacy & terms
                 </a>
               </li>
