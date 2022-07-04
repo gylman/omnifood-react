@@ -1,4 +1,26 @@
 import React from "react";
+import StepTextBox from "./StepTextBox";
+
+const stepsArray = [
+  {
+    stepNumber: "01",
+    headingTertiary: "Tell us what you like (and what not)",
+    stepDescription:
+      "Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!",
+  },
+  {
+    stepNumber: "02",
+    headingTertiary: "Approve your weekly meal plan",
+    stepDescription:
+      "Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.",
+  },
+  {
+    stepNumber: "03",
+    headingTertiary: "Receive meals at convenient time",
+    stepDescription:
+      "Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!",
+  },
+];
 
 function SectionHow() {
   return (
@@ -10,20 +32,13 @@ function SectionHow() {
         </h2>
       </div>
 
+      {/* <!-- STEP 02 --> */}
       <div className="container grid grid--2-cols grid--center-v">
-        {/* <!-- STEP 01 --> */}
-        <div className="step-text-box">
-          <p className="step-number">01</p>
-          <h3 className="heading-tertiary">
-            Tell us what you like (and what not)
-          </h3>
-          <p className="step-description">
-            Never again waste time thinking about what to eat! Omnifood AI will
-            create a 100% personalized weekly meal plan just for you. It makes
-            sure you get all the nutrients and vitamins you need, no matter what
-            diet you follow!
-          </p>
-        </div>
+        <StepTextBox
+          stepNumber={stepsArray[0].stepNumber}
+          headingTertiary={stepsArray[0].headingTertiary}
+          stepDescription={stepsArray[0].stepDescription}
+        />
 
         <div className="step-img-box">
           <img
@@ -43,26 +58,19 @@ function SectionHow() {
     meal approving plan screen"
           />
         </div>
-        <div className="step-text-box">
-          <p className="step-number">02</p>
-          <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
-          <p className="step-description">
-            Once per week, approve the meal plan generated for you by Omnifood
-            AI. You can change ingredients, swap entire meals, or even add your
-            own recipes.
-          </p>
-        </div>
+        <StepTextBox
+          stepNumber={stepsArray[1].stepNumber}
+          headingTertiary={stepsArray[1].headingTertiary}
+          stepDescription={stepsArray[1].stepDescription}
+        />
 
         {/* <!-- STEP 03 --> */}
-        <div className="step-text-box">
-          <p className="step-number">03</p>
-          <h3 className="heading-tertiary">Receive meals at convenient time</h3>
-          <p className="step-description">
-            Best chefs in town will cook your selected meal every day, and we
-            will deliver it to your door whenever works best for you. You can
-            change delivery schedule and address daily!
-          </p>
-        </div>
+
+        <StepTextBox
+          stepNumber={stepsArray[2].stepNumber}
+          headingTertiary={stepsArray[2].headingTertiary}
+          stepDescription={stepsArray[2].stepDescription}
+        />
         <div className="step-img-box">
           <img
             src="img/app/app-screen-3.png"
