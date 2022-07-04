@@ -21,28 +21,19 @@ function SectionPricing() {
           </header>
           <ul className="list">
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>1 meal per day</span>
             </li>
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>Order from 11am to 9pm</span>
             </li>
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>Delivery is free</span>
             </li>
             <li className="list-item">
-              <ion-icon className="list-icon" name="close-outline"></ion-icon>
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
             </li>
           </ul>
           <div className="plan-sign-up">
@@ -62,35 +53,23 @@ function SectionPricing() {
           </header>
           <ul className="list">
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>
                 <strong>2 meals</strong> per day
               </span>
             </li>
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>
                 Order <strong>24/7</strong>
               </span>
             </li>
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>Delivery is free</span>
             </li>
             <li className="list-item">
-              <ion-icon
-                className="list-icon"
-                name="checkmark-outline"
-              ></ion-icon>
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
               <span>Get access to latest recipes</span>
             </li>
           </ul>
@@ -111,7 +90,7 @@ function SectionPricing() {
 
       <div className="container grid grid--4-cols">
         <div className="feature">
-          <ion-icon className="feature-icon" name="infinite-outline"></ion-icon>
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
           <p className="feature-title">Never cook again!</p>
           <p className="feature-text">
             Our subscriptions cover 365 days per year, even including major
@@ -119,10 +98,7 @@ function SectionPricing() {
           </p>
         </div>
         <div className="feature">
-          <ion-icon
-            className="feature-icon"
-            name="nutrition-outline"
-          ></ion-icon>
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
           <p className="feature-title">Local and organic</p>
           <p className="feature-text">
             Our cooks only use local, fresh, and organic products to prepare
@@ -130,7 +106,7 @@ function SectionPricing() {
           </p>
         </div>
         <div className="feature">
-          <ion-icon className="feature-icon" name="leaf-outline"></ion-icon>
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
           <p className="feature-title">No waste</p>
           <p className="feature-text">
             All our partners only use reusable containers to package all your
@@ -138,7 +114,7 @@ function SectionPricing() {
           </p>
         </div>
         <div className="feature">
-          <ion-icon className="feature-icon" name="pause-outline"></ion-icon>
+          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
           <p className="feature-title">Pause anytime</p>
           <p className="feature-text">
             Going on vacation? Just pause your subscription, and we refund
