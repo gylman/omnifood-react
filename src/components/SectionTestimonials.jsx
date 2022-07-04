@@ -1,6 +1,5 @@
 import React from "react";
-import Testimonial from "./Testimonial";
-import cuid from "cuid";
+import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
 
 const testimonialsArray = [
@@ -45,19 +44,7 @@ const testimonialsArray = [
 function SectionTestimonials() {
   return (
     <section className="section-testimonials" id="testimonials">
-      <div className="testimonials-container">
-        <span className="subheading">Testimonials</span>
-        <h2 className="heading-secondary">
-          Once you try it, you can't go back
-        </h2>
-        <div className="testimonials">
-          {testimonialsArray.map(function(testimonialItem) {
-            return (
-              <Testimonial key={cuid()} testimonialItem={testimonialItem} />
-            );
-          })}
-        </div>
-      </div>
+      <Testimonials testimonials={testimonialsArray} />
       <Gallery />
     </section>
   );
