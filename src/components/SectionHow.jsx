@@ -1,5 +1,6 @@
+import cuid from "cuid";
 import React from "react";
-import StepTextBox from "./StepTextBox";
+import Step from "./Step";
 
 const stepsArray = [
   {
@@ -49,7 +50,7 @@ function SectionHow() {
       </div>
       <div className="container grid grid--2-cols grid--center-v">
         {stepsArray.map(function(step) {
-          return <StepTextBox step={step} />;
+          return <Step key={cuid()} step={step} />;
         })}
       </div>
     </section>

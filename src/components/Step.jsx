@@ -1,6 +1,6 @@
 import React from "react";
 
-function StepTextBox({ step }) {
+function Step({ step }) {
   return step.stepNumber % 2 ? (
     <>
       <div className="step-img-box">
@@ -38,4 +38,4 @@ function StepTextBox({ step }) {
   );
 }
 
-export default StepTextBox;
+export default Step;
