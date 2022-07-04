@@ -1,5 +1,6 @@
 import React from "react";
 import MainNavLink from "./MainNavLink";
+import cuid from "cuid";
 
 const linkArray = [
   { className: "main-nav-link", href: "#how", children: "How it works" },
@@ -28,7 +29,11 @@ export default function NavigationBar() {
         <ul className="main-nav-list">
           {linkArray.map(function(link) {
             return (
-              <MainNavLink className={link.className} href={link.href}>
+              <MainNavLink
+                key={cuid()}
+                className={link.className}
+                href={link.href}
+              >
                 {link.children}
               </MainNavLink>
             );
