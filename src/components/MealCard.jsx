@@ -1,23 +1,22 @@
 import React from "react";
+import MealTag from "./MealTag";
 
-function MealCard() {
+function MealCard({ meal }) {
   return (
     <div className="meal">
-      <img
-        src="img/meals/meal-1.jpg"
-        className="meal-img"
-        alt="Japanese Gyozas"
-      />
+      <img src={meal.img.src} className="meal-img" alt={meal.img.alt} />
       <div className="meal-content">
         <div className="meal-tags">
-          <span className="tag tag--vegetarian">Vegetarian</span>
+          {meal.tags.map(function(tag) {
+            return <MealTag>{tag}</MealTag>;
+          })}
         </div>
-        <p className="meal-title">Japanese Gyozas</p>
+        <p className="meal-title">{meal.title}</p>
         <ul className="meal-attributes">
           <li className="meal-attribute">
             <ion-icon className="meal-icon" name="flame-outline"></ion-icon>
             <span>
-              <strong>650</strong> calories
+              <strong>{meal.caloryAmount}</strong> calories
             </span>
           </li>
           <li className="meal-attribute">
@@ -26,13 +25,13 @@ function MealCard() {
               name="restaurant-outline"
             ></ion-icon>
             <span>
-              NutriScore &reg; <strong>74</strong>
+              NutriScore &reg; <strong>{meal.nutriScore}</strong>
             </span>
           </li>
           <li className="meal-attribute">
             <ion-icon className="meal-icon" name="star-outline"></ion-icon>
             <span>
-              <strong>4.9</strong> rating (537)
+              <strong>{meal.rating}</strong> rating ({meal.numberOfReviews})
             </span>
           </li>
         </ul>

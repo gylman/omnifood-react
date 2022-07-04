@@ -1,6 +1,27 @@
 import React from "react";
 import MealCard from "./MealCard";
 
+const mealsArray = [
+  {
+    img: { src: "img/meals/meal-1.jpg", alt: "Japanese Gyozas" },
+    title: "Avocado Salad",
+    caloryAmount: 400,
+    nutriScore: 74,
+    rating: 4.9,
+    numberOfReviews: 537,
+    tags: ["Vegetarian"],
+  },
+  {
+    img: { src: "img/meals/meal-2.jpg", alt: "Avocado Salad" },
+    title: "Japanese Gyozas",
+    caloryAmount: 650,
+    nutriScore: 92,
+    rating: 4.8,
+    numberOfReviews: 441,
+    tags: ["Vegan", "Paleo"],
+  },
+];
+
 function SectionMeals() {
   return (
     <section className="section-meals" id="meals">
@@ -12,45 +33,9 @@ function SectionMeals() {
       </div>
 
       <div className="container grid grid--3-cols margin-bottom-md">
-        <MealCard />
-        <div className="meal">
-          <img
-            src="img/meals/meal-2.jpg"
-            className="meal-img"
-            alt="Avocado Salad"
-          />
-          <div className="meal-content">
-            <div className="meal-tags">
-              <span className="tag tag--vegan">Vegan</span>
-              <span className="tag tag--paleo">Paleo</span>
-            </div>
-            <p className="meal-title">Avocado Salad</p>
-            <ul className="meal-attributes">
-              <li className="meal-attribute">
-                <ion-icon className="meal-icon" name="flame-outline"></ion-icon>
-                <span>
-                  <strong>400</strong> calories
-                </span>
-              </li>
-              <li className="meal-attribute">
-                <ion-icon
-                  className="meal-icon"
-                  name="restaurant-outline"
-                ></ion-icon>
-                <span>
-                  NutriScore &reg; <strong>92</strong>
-                </span>
-              </li>
-              <li className="meal-attribute">
-                <ion-icon className="meal-icon" name="star-outline"></ion-icon>
-                <span>
-                  <strong>4.8</strong> rating (441)
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
+        {mealsArray.map(function(meal) {
+          return <MealCard meal={meal} />;
+        })}
         <div className="diets">
           <h3 className="heading-tertiary">Works with any diet:</h3>
           <ul className="list">
