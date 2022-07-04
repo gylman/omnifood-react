@@ -1,8 +1,6 @@
 import React from "react";
 
 function Testimonial({ testimonialItem }) {
-  console.log(testimonialItem.img.src);
-  console.log(testimonialItem.img.alt);
   return (
     <figure className="testimonial">
       <img
