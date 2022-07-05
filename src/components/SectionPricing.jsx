@@ -1,5 +1,27 @@
+import cuid from "cuid";
 import React from "react";
 import Feature from "./Feature";
+import PricingCard from "./PricingCard";
+
+const pricingPlansArray = [
+  {
+    name: "Starter",
+    price: 399,
+    text: "per month. That's just $13 per meal!",
+    perks: ["1 meal per day", "Order from 11am to 9pm", "Delivery is free", ""],
+  },
+  {
+    name: "Complete",
+    price: 649,
+    text: "per month. That's just $11 per meal!",
+    perks: [
+      "2 meals per day",
+      "Order 24/7",
+      "Delivery is free",
+      "Access the lastest recipes",
+    ],
+  },
+];
 
 const featuresArray = [
   {
@@ -39,74 +61,9 @@ function SectionPricing() {
       </div>
 
       <div className="container grid grid--2-cols margin-bottom-md">
-        <div className="pricing-plan pricing-plan--starter">
-          <header className="plan-header">
-            <p className="plan-name">Starter</p>
-            <p className="plan-price">
-              <span>$</span>399
-            </p>
-            <p className="plan-text">per month. That's just $13 per meal!</p>
-          </header>
-          <ul className="list">
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>1 meal per day</span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Order from 11am to 9pm</span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Delivery is free</span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-            </li>
-          </ul>
-          <div className="plan-sign-up">
-            <a href="/#" className="btn btn--full">
-              Start eating well
-            </a>
-          </div>
-        </div>
-
-        <div className="pricing-plan pricing-plan--complete">
-          <header className="plan-header">
-            <p className="plan-name">Complete</p>
-            <p className="plan-price">
-              <span>$</span>649
-            </p>
-            <p className="plan-text">per month. That's just $11 per meal!</p>
-          </header>
-          <ul className="list">
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>
-                <strong>2 meals</strong> per day
-              </span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>
-                Order <strong>24/7</strong>
-              </span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Delivery is free</span>
-            </li>
-            <li className="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Get access to latest recipes</span>
-            </li>
-          </ul>
-          <div className="plan-sign-up">
-            <a href="/#" className="btn btn--full">
-              Start eating well
-            </a>
-          </div>
-        </div>
+        {pricingPlansArray.map(function(plan) {
+          return <PricingCard key={cuid()} plan={plan} />;
+        })}
       </div>
 
       <div className="container grid">
@@ -118,7 +75,7 @@ function SectionPricing() {
 
       <div className="container grid grid--4-cols">
         {featuresArray.map(function(feature) {
-          return <Feature feature={feature} />;
+          return <Feature key={cuid()} feature={feature} />;
         })}
       </div>
     </section>
