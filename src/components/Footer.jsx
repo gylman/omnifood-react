@@ -1,38 +1,11 @@
 import React from "react";
+import LogoColumn from "./LogoColumn";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="container grid grid--footer">
-        <div className="logo-col">
-          <a href="/#" className="footer-logo">
-            <img className="logo" alt="Omnifood" src="img/omnifood-logo.png" />
-          </a>
-
-          <ul className="social-links">
-            <li>
-              <a className="footer-link" href="/#">
-                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="/#">
-                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="/#">
-                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-          </ul>
-
-          <p className="copyright">
-            Copyright &copy; <span className="year">2027</span> by Omnifood,
-            Inc. All rights reserved.
-          </p>
-        </div>
-
+        <LogoColumn />
         <div className="address-col">
           <p className="footer-heading">Contact us</p>
           <address className="contacts">
