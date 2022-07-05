@@ -1,5 +1,6 @@
 import cuid from "cuid";
 import React from "react";
+import ReactMarkDown from "react-markdown";
 
 function Perks({ perks }) {
   return (
@@ -8,7 +9,9 @@ function Perks({ perks }) {
         return perk ? (
           <li key={cuid()} className="list-item">
             <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-            <span>{perk}</span>
+            <span>
+              <ReactMarkDown>{perk}</ReactMarkDown>
+            </span>
           </li>
         ) : (
           <li key={cuid()} className="list-item">

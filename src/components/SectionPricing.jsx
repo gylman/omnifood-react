@@ -15,8 +15,8 @@ const pricingPlansArray = [
     price: 649,
     text: "per month. That's just $11 per meal!",
     perks: [
-      "2 meals per day",
-      "Order 24/7",
+      "**2** meals per day",
+      "Order **24/7**",
       "Delivery is free",
       "Access the lastest recipes",
     ],
