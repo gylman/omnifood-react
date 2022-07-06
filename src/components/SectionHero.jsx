@@ -21,12 +21,14 @@ function SectionHero() {
           </a>
           <div className="delivered-meals">
             <div className="delivered-imgs">
-              <img src="img/customers/customer-1.jpg" alt="Customer" />
-              <img src="img/customers/customer-2.jpg" alt="Customer" />
-              <img src="img/customers/customer-3.jpg" alt="Customer" />
-              <img src="img/customers/customer-4.jpg" alt="Customer" />
-              <img src="img/customers/customer-5.jpg" alt="Customer" />
-              <img src="img/customers/customer-6.jpg" alt="Customer" />
+              {new Array(6).fill().map(function(_, i) {
+                return (
+                  <img
+                    src={`img/customers/customer-${i + 1}.jpg`}
+                    alt="Customer"
+                  />
+                );
+              })}
             </div>
             <p className="delivered-text">
               <span>250,000+</span> meals delivered last year!
