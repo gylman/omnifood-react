@@ -11,7 +11,6 @@ const stepsArray = [
       "Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!",
     img: {
       src: "img/app/app-screen-1.png",
-      className: "step-img",
       alt: "iPhone app preferences selection screen",
     },
   },
@@ -22,7 +21,6 @@ const stepsArray = [
       "Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.",
     img: {
       src: "img/app/app-screen-2.png",
-      className: "step-img",
       alt: "iPhone app preferences selection screen",
     },
   },
@@ -33,7 +31,6 @@ const stepsArray = [
       "Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!",
     img: {
       src: "img/app/app-screen-3.png",
-      className: "step-img",
       alt: "iPhone app preferences selection screen",
     },
   },
