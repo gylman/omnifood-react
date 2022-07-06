@@ -1,4 +1,25 @@
 import React from "react";
+import Input from "./Input";
+import SelectBox from "./SelectBox";
+
+const inputProps = [
+  {
+    label: "Full Name",
+    id: "full-name",
+    type: "text",
+    placeholder: "John Smith",
+    name: "full-name",
+    required: "true",
+  },
+  {
+    label: "Email address",
+    id: "email",
+    type: "email",
+    placeholder: "me@example.com",
+    name: "email",
+    required: "true",
+  },
+];
 
 function SectionCTA() {
   return (
@@ -14,42 +35,25 @@ function SectionCTA() {
             </p>
 
             <form className="cta-form" action="sign-up" netlify="true">
-              <div>
-                <label htmlFor="full-name">Full Name</label>
-                <input
-                  id="full-name"
-                  type="text"
-                  placeholder="John Smith"
-                  name="full-name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email">Email address</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="me@example.com"
-                  name="email"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="select-where">
-                  Where did you hear from us?
-                </label>
-                <select id="select-where" name="select-where" required>
-                  <option value="">Please choose one option:</option>
-                  <option value="friends">Friends and family</option>
-                  <option value="youtube">YouTube video</option>
-                  <option value="podcast">Podcast</option>
-                  <option value="ad">Facebook ad</option>
-                  <option value="others">Others</option>
-                </select>
-              </div>
-
+              <Input
+                htmlFor={inputProps[0].htmlFor}
+                label={inputProps[0].label}
+                id={inputProps[0].id}
+                type={inputProps[0].type}
+                placeholder={inputProps[0].placeholder}
+                name={inputProps[0].name}
+                required={inputProps[0].required}
+              />
+              <Input
+                htmlFor={inputProps[1].htmlFor}
+                label={inputProps[1].label}
+                id={inputProps[1].id}
+                type={inputProps[1].type}
+                placeholder={inputProps[1].placeholder}
+                name={inputProps[1].name}
+                required={inputProps[1].required}
+              />
+              <SelectBox />
               <button className="btn btn--form">Sign up now</button>
             </form>
           </div>
