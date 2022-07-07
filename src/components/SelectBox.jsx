@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-function SelectBox() {
+function SelectBox({ children }) {
+  const [channel, setChannel] = useState("");
   return (
     <div>
       <label htmlFor="select-where">Where did you hear from us?</label>
-      <select id="select-where" name="select-where" required>
-        <option value="">Please choose one option:</option>
-        <option value="friends">Friends and family</option>
-        <option value="youtube">YouTube video</option>
-        <option value="podcast">Podcast</option>
-        <option value="ad">Facebook ad</option>
-        <option value="others">Others</option>
+      <select
+        id="select-where"
+        name="select-where"
+        required
+        value={channel}
+        onChange={function(e) {
+          setChannel(e.target.value);
+        }}
+      >
+        {children}
       </select>
     </div>
   );

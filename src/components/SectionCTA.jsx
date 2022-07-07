@@ -1,3 +1,4 @@
+import cuid from "cuid";
 import React from "react";
 import Input from "./Input";
 import SelectBox from "./SelectBox";
@@ -9,7 +10,6 @@ const inputProps = [
     type: "text",
     placeholder: "John Smith",
     name: "full-name",
-    required: "true",
   },
   {
     label: "Email address",
@@ -17,8 +17,16 @@ const inputProps = [
     type: "email",
     placeholder: "me@example.com",
     name: "email",
-    required: "true",
   },
+];
+
+const options = [
+  { value: "", label: "Please choose one option:" },
+  { value: "friends", label: "Friends and family" },
+  { value: "youtube", label: "YouTube video" },
+  { value: "podcast", label: "Podcast" },
+  { value: "ad", label: "Facebook ad" },
+  { value: "others", label: "Others" },
 ];
 
 function SectionCTA() {
@@ -42,7 +50,7 @@ function SectionCTA() {
                 type={inputProps[0].type}
                 placeholder={inputProps[0].placeholder}
                 name={inputProps[0].name}
-                required={inputProps[0].required}
+                required
               />
               <Input
                 htmlFor={inputProps[1].htmlFor}
@@ -51,9 +59,13 @@ function SectionCTA() {
                 type={inputProps[1].type}
                 placeholder={inputProps[1].placeholder}
                 name={inputProps[1].name}
-                required={inputProps[1].required}
+                required
               />
-              <SelectBox />
+              <SelectBox>
+                {options.map(function(option) {
+                  return <option key={cuid()}>{option.label}</option>;
+                })}
+              </SelectBox>
               <button className="btn btn--form">Sign up now</button>
             </form>
           </div>
