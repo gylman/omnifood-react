@@ -1,3 +1,4 @@
+import cuid from "cuid";
 import React from "react";
 import SocialLink from "./SocialLink";
 
@@ -7,7 +8,7 @@ function SocialNetworks() {
   return (
     <ul className="social-links">
       {socialLinks.map(function(link) {
-        return <SocialLink title={link} />;
+        return <SocialLink key={cuid()} title={link} />;
       })}
     </ul>
   );

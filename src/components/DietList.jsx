@@ -1,3 +1,4 @@
+import cuid from "cuid";
 import React from "react";
 import DietItem from "./DietItem";
 
@@ -19,7 +20,7 @@ function DietList() {
       <h3 className="heading-tertiary">Works with any diet:</h3>
       <ul className="list">
         {diets.map(function(diet) {
-          return <DietItem>{diet}</DietItem>;
+          return <DietItem key={cuid()}>{diet}</DietItem>;
         })}
       </ul>
     </div>

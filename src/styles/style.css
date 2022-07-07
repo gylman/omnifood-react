@@ -179,15 +179,20 @@
 
 .logos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logos img {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
+  padding-right: 80px;
 }
 
+.logos img:hover {
+  opacity: 50%;
+  filter: brightness(100%);
+}
 /**************************/
 /* HOW IT WORKS SECTION */
 /**************************/
