@@ -2,7 +2,7 @@ import React from "react";
 import LogoColumn from "./LogoColumn";
 import OtherColumns from "./OtherColumns";
 
-const columnsArray = [
+const columns = [
   {
     heading: "Account",
     items: ["Create account", "Sign in", "iOS app", "Android app"],
@@ -22,7 +22,7 @@ function Footer() {
     <footer className="footer">
       <div className="container grid grid--footer">
         <LogoColumn />
-        <OtherColumns columnsArray={columnsArray} />
+        <OtherColumns columns={columns} />
       </div>
     </footer>
   );
