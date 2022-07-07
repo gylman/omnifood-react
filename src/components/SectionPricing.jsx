@@ -3,7 +3,7 @@ import React from "react";
 import Feature from "./Feature";
 import PricingCard from "./PricingCard";
 
-const pricingPlansArray = [
+const pricingPlans = [
   {
     name: "Starter",
     price: 399,
@@ -23,7 +23,7 @@ const pricingPlansArray = [
   },
 ];
 
-const featuresArray = [
+const features = [
   {
     iconName: "infinite-outline",
     title: "Never cook again!",
@@ -61,7 +61,7 @@ function SectionPricing() {
       </div>
 
       <div className="container grid grid--2-cols margin-bottom-md">
-        {pricingPlansArray.map(function(plan) {
+        {pricingPlans.map(function(plan) {
           return <PricingCard key={cuid()} plan={plan} />;
         })}
       </div>
@@ -74,7 +74,7 @@ function SectionPricing() {
       </div>
 
       <div className="container grid grid--4-cols">
-        {featuresArray.map(function(feature) {
+        {features.map(function(feature) {
           return <Feature key={cuid()} feature={feature} />;
         })}
       </div>

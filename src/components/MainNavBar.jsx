@@ -2,7 +2,7 @@ import React from "react";
 import MainNavLink from "./MainNavLink";
 import cuid from "cuid";
 
-const linkArray = [
+const links = [
   { href: "#how", children: "How it works" },
   { href: "#meals", children: "Meals" },
   {
@@ -24,7 +24,7 @@ export default function NavigationBar() {
       </a>
       <nav className="main-nav">
         <ul className="main-nav-list">
-          {linkArray.map(function(link) {
+          {links.map(function(link) {
             return (
               <MainNavLink key={cuid()} href={link.href}>
                 {link.children}

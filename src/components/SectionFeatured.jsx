@@ -1,7 +1,7 @@
 import cuid from "cuid";
 import React from "react";
 
-const logosArray = [
+const logos = [
   { src: "img/logos/techcrunch.png", alt: "Techcrunch logo" },
   { src: "img/logos/business-insider.png", alt: "Business Insider" },
   { src: "img/logos/the-new-york-times.png", alt: "The New York Times" },
@@ -15,7 +15,7 @@ function SectionFeatured() {
       <div className="container">
         <h2 className="heading-featured-in">As featured in</h2>
         <div className="logos">
-          {logosArray.map(function(logo) {
+          {logos.map(function(logo) {
             return <img key={cuid()} src={logo.src} alt={logo.alt} />;
           })}
         </div>

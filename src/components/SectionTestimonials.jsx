@@ -2,7 +2,7 @@ import React from "react";
 import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
 
-const testimonialsArray = [
+const testimonials = [
   {
     img: {
       alt: "Customer Dave Bryson",
@@ -44,7 +44,7 @@ const testimonialsArray = [
 function SectionTestimonials() {
   return (
     <section className="section-testimonials" id="testimonials">
-      <Testimonials testimonials={testimonialsArray} />
+      <Testimonials testimonials={testimonials} />
       <Gallery />
     </section>
   );

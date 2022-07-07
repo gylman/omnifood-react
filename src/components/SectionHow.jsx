@@ -2,7 +2,7 @@ import cuid from "cuid";
 import React from "react";
 import Step from "./Step";
 
-const stepsArray = [
+const steps = [
   {
     number: 1,
 
@@ -46,7 +46,7 @@ function SectionHow() {
         </h2>
       </div>
       <div className="container grid grid--2-cols grid--center-v">
-        {stepsArray.map(function(step) {
+        {steps.map(function(step) {
           return <Step key={cuid()} step={step} />;
         })}
       </div>
