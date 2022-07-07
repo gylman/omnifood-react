@@ -1,6 +1,6 @@
 import cuid from "cuid";
 import React from "react";
-import Diets from "./Diets";
+import DietList from "./DietList";
 import MealCard from "./MealCard";
 
 const meals = [
@@ -38,7 +38,7 @@ function SectionMeals() {
         {meals.map(function(meal) {
           return <MealCard meal={meal} key={cuid()} />;
         })}
-        <Diets />
+        <DietList />
       </div>
 
       <div className="container all-recipes">
