@@ -3,6 +3,7 @@ import LogoColumn from "./LogoColumn";
 import OtherColumns from "./OtherColumns";
 
 const columns = [
+  { heading: "Contact us" },
   {
     heading: "Account",
     items: ["Create account", "Sign in", "iOS app", "Android app"],

@@ -1,3 +1,4 @@
+import cuid from "cuid";
 import React from "react";
 
 function SectionHero() {
@@ -24,6 +25,7 @@ function SectionHero() {
               {new Array(6).fill().map(function(_, i) {
                 return (
                   <img
+                    key={cuid()}
                     src={`img/customers/customer-${i + 1}.jpg`}
                     alt="Customer"
                   />
