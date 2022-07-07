@@ -3,9 +3,9 @@ import React from "react";
 import Diets from "./Diets";
 import MealCard from "./MealCard";
 
-const mealsArray = [
+const meals = [
   {
-    img: { src: "img/meals/meal-1.jpg", alt: "Japanese Gyozas" },
+    img: { src: "img/meals/meal-1.jpg", label: "Japanese Gyozas" },
     title: "Avocado Salad",
     caloryAmount: 400,
     nutriScore: 74,
@@ -14,7 +14,7 @@ const mealsArray = [
     tags: ["Vegetarian"],
   },
   {
-    img: { src: "img/meals/meal-2.jpg", alt: "Avocado Salad" },
+    img: { src: "img/meals/meal-2.jpg", label: "Avocado Salad" },
     title: "Japanese Gyozas",
     caloryAmount: 650,
     nutriScore: 92,
@@ -35,7 +35,7 @@ function SectionMeals() {
       </div>
 
       <div className="container grid grid--3-cols margin-bottom-md">
-        {mealsArray.map(function(meal) {
+        {meals.map(function(meal) {
           return <MealCard meal={meal} key={cuid()} />;
         })}
         <Diets />

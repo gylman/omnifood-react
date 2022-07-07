@@ -5,7 +5,7 @@ import MealTag from "./MealTag";
 function MealCard({ meal }) {
   return (
     <div className="meal">
-      <img src={meal.img.src} className="meal-img" alt={meal.img.alt} />
+      <img src={meal.img.src} className="meal-img" alt={meal.img.label} />
       <div className="meal-content">
         <div className="meal-tags">
           {meal.tags.map(function(tag) {
